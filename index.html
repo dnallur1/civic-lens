@@ -61,7 +61,7 @@
       <article>
         <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
         <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-        <video controls>
+        <video controls preload="metadata">
           <source src="videos/water-management.mp4" type="video/mp4">
           Your browser does not support the video.
         </video>
@@ -70,7 +70,7 @@
       <article>
         <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
         <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-        <video controls>
+        <video controls preload="metadata">
           <source src="videos/voter-suppression.mp4" type="video/mp4">
           Your browser does not support the video.
         </video> 
@@ -81,41 +81,65 @@
       <section id="featured-articles">
       <h2>Featured Articles</h2>
         
-        <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-        <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        <article>
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        </article>
         
-        <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-        <p>An investigative series on cash bail and its disproportionate impact.</p>
+        <article>
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact.</p>
+        </article>
         
-        <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-        <p>Humanizing the labor that keeps households and economies afloat.</p>
+        <article>
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+        </article>
         
-        <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-        <p>Data visualization showing systemic inequality in real estate today.</p>
+        <article>
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>Data visualization showing systemic inequality in real estate today.</p>
+        </article>
         
-        <h3>Climate Injustice: Who Pays for Pollution?</h3>
-        <p>Communities of color bear the brunt of environmental damage.</p>
+        <article>
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+        </article>
         
-        <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-        <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        <article>
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        </article>
         
-        <h3>Food Deserts and Corporate Abandonment</h3>
-        <p>Why access to nutrition is a zip code lottery.</p>
+       <article>
+         <h3>Food Deserts and Corporate Abandonment</h3>
+         <p>Why access to nutrition is a zip code lottery.</p>
+       </article>
         
-        <h3>Policing Mental Health: A Broken Response System</h3>
-        <p>Examining police interactions with those in crisis.</p>
+       <article>
+         <h3>Policing Mental Health: A Broken Response System</h3>
+         <p>Examining police interactions with those in crisis.</p>
+       </article>
         
-        <h3>The Disinformation Economy</h3>
-        <p>Tracing profit motives behind fake news empires.</p>
+        <article>
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing profit motives behind fake news empires.</p>
+        </article>
         
-        <h3>Facing the Algorithm: AI and Racial Bias</h3>
-        <p>The coded inequalities that shape our lives.</p>
+        <article>
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>The coded inequalities that shape our lives.</p>
+        </article>
         
-        <h3>The Voting Maze</h3>
+        <article>
+          <h3>The Voting Maze</h3>
         <p>A guide to understanding your rights amid changing laws.</p>
+        </article>
         
-        <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-        <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        <article>
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </article>
       </section>
         
       <section id="alerts">
@@ -124,75 +148,91 @@
 
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
         
-        <label for="name">Name
+        <div class="form-control">
+          <label for="name">Name
         </label>
-
         <input
              id="name"
              name="name"
              type="text" >
+        </div>
 
+        <div class="form-control">
         <label for="mobile">Mobile
         </label> 
-
         <input 
              id="mobile"
              name="mobile"
              type="tel" >
+        </div>
              
         <fieldset>
           <legend>
              Notification Preferences
           </legend>
 
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="preference-breaking-news"
                name="notification-preference"
                value="breaking-news" >
             <label for="preference-breaking-news">Breaking News</label>
-        
+        </div>  
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="politics"
                name="notification-preference"
                value="politics" >
             <label for="politics">Politics</label>
-          
+        </div>
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="weather"
                name="notification-preference"
                value="weather" >
             <label for="weather">Weather</label>
-        
+        </div>
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="sports"
                name="notification-preference"
                value="sports" >
             <label for="sports">Sports</label>
-        
+        </div>
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="entertainment"
                name="notification-preference"
                value="entertainment" >
             <label for="entertainment">Entertainment</label>
-        
+        </div>
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="world"
                name="notification-preference"
                value="world" >
             <label for="world">World</label>
-        
+        </div>
+
+        <div class="checkbox-control">
           <input
-               type="radio"
+               type="checkbox"
                id="financial"
                name="notification-preference"
                value="financial" >
             <label for="financial">Financial</label>
+        </div>
         </fieldset>
         
         <input type="submit" value="Subscribe">
@@ -204,14 +244,14 @@
       <footer id="social">
       <h2>Follow Us</h2>
       <ul>
-        <li><a href="https://x.com" target="_blank">Twitter/X</a></li>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-        <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com" target="_blank" rel="noopener">Twitter/X</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
         
-        &copy; 2026 Civic Lens. All rights reserved.
+        <p>&copy; 2026 Civic Lens. All rights reserved.</p>
       </footer>
     
         
