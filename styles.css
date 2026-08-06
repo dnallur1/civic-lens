@@ -529,7 +529,7 @@ footer {
   }
 
   main {
-    max-width: 1280px;
+    max-width: none;
     padding-left: 5rem;
     padding-right: 5rem;
   }
